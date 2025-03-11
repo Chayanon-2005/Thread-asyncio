@@ -1,5 +1,13 @@
 import asyncio
 
+async def power(base, exponent):
+    """คำนวณเลขยกกำลังแบบอะซิงโครนัส"""
+    print(f"กำลังคำนวณ {base}^{exponent}...")
+    await asyncio.sleep(1)  # จำลองการทำงานที่ใช้เวลานาน
+    result = base ** exponent
+    print(f"{base}^{exponent} = {result}")
+    return result
+
 async def main():
     """ฟังก์ชันหลัก"""
     base = 2
